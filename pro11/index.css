@@ -1,0 +1,315 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.change{
+    background-color: black;
+    color: white;
+}
+.change header{
+    background-color: red;
+    color: white;
+}
+.change header .menu a{
+    color: white;
+}
+.change section{
+    background-color: brown;
+}
+.change .target .title{
+    background-color: yellowgreen;
+    color: white;
+}
+header{
+    padding: 20px;
+    background-color: rgb(80, 107, 107);
+    border-bottom-left-radius: 60px 120px;
+    border-bottom-right-radius: 60px 120px;
+}
+header h1{
+    text-align: center;
+    padding: 15px;
+
+}
+header .menu{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+header .menu a{
+    color: black;
+    padding: 10px;
+    cursor: pointer;
+}
+
+section{
+    box-shadow: 0 0 5px black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 40px;
+    width: 90vw;
+    margin-left: 20px;
+    transition: 0.5s;
+}
+.target .title{
+    padding: 15px;
+    background-color: rgb(80, 107, 107);
+    text-align: center;
+    margin: 15px auto;
+    width: 40vw;
+    border-bottom-left-radius: 30px 60px;
+    border-bottom-right-radius: 30px 60px;
+}
+.total{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+}
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.name .img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.main .you{
+    display: inline-block;
+    background-color: red;
+    color: white;
+    padding: 5px;
+}
+.main h4{
+    text-align: center;
+}
+.main p{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.main .face{
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    padding: 5px;
+}
+.name .tit{
+    flex: 1;
+    margin-left: 20px;
+}
+#hidden{
+    display: block;
+    position: absolute;
+    box-shadow: 0 5px 25px 0 rgb(0 0 0 / 60%);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: #3d4a59;
+    margin-right: 1rem;
+    background-color: #fff;
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    min-width: 100px;
+    transition: 0.5s;
+}
+#hidden li{
+    transition: 0.5s;
+}
+#hidden li:hover{
+    border-bottom: 1px solid red;
+    font-weight: bold;
+    
+}
+.but {
+    border: none;
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    background-color: aquamarine;
+    color: black;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.video{
+    text-align: center;
+}
+#qu1{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 50px 0 30px;
+    animation: quot 3s 1;
+}
+.vid{
+    width: 560px; 
+    height: 315px;
+    margin-top: 30px;
+    border-radius: 10px;
+    animation: move 4s 1;
+   
+}
+@keyframes move {
+    0%{
+       opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes quot {
+    0%{
+  opacity: 0.2;
+    }
+    100%{
+opacity: 1;
+    }
+}
+.heart{
+  font-size: 30px;
+  position: fixed;
+  top: 0;
+  animation-name: wave;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+@keyframes wave {
+    0%{
+transform: translateY(-5vh);
+    }
+    100%{
+transform: translateY(110vh);
+    }
+}
+#cord{
+    text-align: center;
+    margin: 30px auto;
+    font-size: 25px;
+    font-weight: bold;
+}
+.q1,.q2,.q3{
+    margin: 20px auto;
+}
+.plus{
+    font-size: 40px;
+    cursor: pointer;
+}
+ .titt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(65, 105, 225, 0.9);
+    border-radius: 5px;
+    padding: 16px;
+    transition: 0.5s;
+}
+.content{
+    padding: 18px;
+    background-color: rgb(227, 229, 236);
+    border-bottom: 1px solid royalblue;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 18px;
+    transition: 0.5s;
+    opacity: 0;
+    height: 0;
+}
+.active {
+    opacity: 1;
+}
+.clock{
+    text-align: center;
+    background-color: #2e94e3;
+    color: white;
+    width: 220px;
+    padding: 17px;
+    margin: 60px auto;
+    border-radius: 6px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+.clock:hover{
+    box-shadow: 5px 5px 17px  #216ca5;
+    width: 240px;
+}
+.time{
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 30px;
+}
+.s-con{
+    width: 700px;
+    height: 400px;
+    position: relative;
+    margin: 20px auto;
+}
+.ima{
+    position: absolute;
+    top: 0;
+    width: 700px;
+    height: 400px;
+}
+.slo{
+    z-index: 1;
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    top: 20px;
+    left: 20px;
+    background-color: #2e94e3;
+    padding: 6px;
+    border-radius: 5px;
+}
+.num{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+.num button{
+    all: unset
+}
+#pre, #next{
+    background-color: #2e94e3;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 18px;
+}
+.num .nomo button{
+    background-color: #f3f3f3;
+    color: #222;
+    padding: 3px 8px;
+    margin-left: 8px;
+    border-radius: 5px;
+}
+.num .nomo button:hover{
+    background-color: #2e94e3;
+    color: #fff;
+    padding: 9px;
+}
+#act{
+    background-color: #2e94e3;
+    color: #fff;
+}
+#next:active{
+    transform: translateX(4px);
+}
+#pre:active{
+    transform: translateX(-4px);
+}
